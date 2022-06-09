@@ -542,7 +542,7 @@ class SauresSwitch(SwitchEntity):
             self.meter_id, CONF_COMMAND_DEACTIVATE
         )
         if result:
-            await self.controller.async_get_switchess(self.flat_id, True)
+            await self.controller.async_get_switches(self.flat_id, True)
 
     @property
     def is_on(self):
